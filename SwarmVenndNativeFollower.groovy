@@ -75,7 +75,7 @@ public class SwarmVenndNativeFollower {
 
 
 //        if (originalAmount <= 100000000) {
-//            status = 'authorized'
+            status = 'authorized'
 //        }
 //        else {
 //            status = 'valid'
