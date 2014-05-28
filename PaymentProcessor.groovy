@@ -21,7 +21,7 @@ class PaymentProcessor {
 
     static logger
     static log4j
-    //static groovyx.net.http.AsyncHTTPBuilder HttpAsync
+//    static groovyx.net.http.AsyncHTTPBuilder HttpAsync
     static db
 
 
@@ -92,6 +92,8 @@ class PaymentProcessor {
         row = db.firstRow("select name from sqlite_master where type='table' and name='debits'")
         assert row != null
         row = db.firstRow("select name from sqlite_master where type='table' and name='payments'")
+        assert row != null
+        row = db.firstRow("select name from sqlite_master where type='table' and name='issuances'")
         assert row != null
     }
 
