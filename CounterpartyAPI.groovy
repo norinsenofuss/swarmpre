@@ -265,7 +265,7 @@ class CounterpartyAPI {
         def myParams
 
         if (testMode == false) {
-            myParams = ["source":sourceAddress,"destination":destinationAddress,"asset":asset,"quantity":amount,"encoding":counterpartyTransactionEncoding]
+            myParams = ["source":sourceAddress,"destination":destinationAddress,"asset":asset,"quantity":amount,"encoding":counterpartyTransactionEncoding,"allow_unconfirmed_inputs":counterpartyMultisendPerBlock]
 //            myParams = [sourceAddress, destinationAddress, asset, amount]
         }
         else {
